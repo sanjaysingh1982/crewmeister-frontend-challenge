@@ -1,0 +1,31 @@
+{
+  "setupFiles": [
+    "<rootDir>/src/setupTests.ts"
+  ],
+  "testRegex": "/*.test.tsx$",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!<rootDir>/node_modules/",
+    "!src/index.tsx",
+    "!src/app.tsx",
+    "!src/serviceWorker.js"
+  ],
+  "coverageDirectory": "test-coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  },
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ]
+}
