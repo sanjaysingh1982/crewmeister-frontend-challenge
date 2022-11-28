@@ -10,32 +10,33 @@ const Table = ({ events }: any) => {
                 sort: 'asc',
             },
             {
-                label: 'type',
+                label: 'Type',
                 field: 'type',
                 sort: 'asc',
             },
             {
-                label: 'start date',
+                label: 'Start Date',
                 field: 'startDate',
                 sort: 'asc',
             },
             {
-                label: 'end date',
+                label: 'End Date',
                 field: 'endDate',
                 sort: 'asc',
             },
             {
-                label: 'created at',
-                field: 'createdAt',
+                label: 'Member Note',
+                field: 'memberNote',
                 sort: 'asc',
             },
             {
-                label: 'confirmed at',
-                field: 'confirmedAt',
+                label: 'Status',
+                field: 'status',
                 sort: 'asc',
-            }, {
-                label: 'note',
-                field: 'memberNote',
+            },
+            {
+                label: 'Admitter Note',
+                field: 'admitterNote',
                 sort: 'asc',
             }
         ],
@@ -47,6 +48,7 @@ const Table = ({ events }: any) => {
             striped
             bordered
             small
+            noBottomColumns={true}
             data={data}
         />
     );

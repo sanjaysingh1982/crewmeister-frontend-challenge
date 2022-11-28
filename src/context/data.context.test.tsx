@@ -20,12 +20,6 @@ describe('Data context getAllAbsences()', () => {
         expect(getAllAbsences({userId: 5293}).length).toBe(7); 
     });
 
-    it('should return properly formatted data', () => {
-        const absences = getAllAbsences({userId: 5192})[0];
-        expect(absences.createdAt).toBe("2021-01-25");
-        expect(absences.confirmedAt).toBe('2021-01-27');
-    });
-
     it('should return data from JSON file which match with start and end date', () => {
         expect(getAllAbsences({startDate: '2021-01-13', endDate: '2021-02-13'}).length).toBe(3);
     });

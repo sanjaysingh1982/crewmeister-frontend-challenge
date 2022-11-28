@@ -8,7 +8,7 @@ import { DataContext } from '../context/data.context';
 const BasicShell = React.lazy(() => import('../shell/basicShell'));
 const Table = React.lazy(() => import('../components/table/Table'));
 
-let ics = require('ics');
+const ics = require('ics');
 
 const HomePage = ({ location }: any) => {
     const { getAllEventData } = useContext(DataContext); 
@@ -42,8 +42,8 @@ const HomePage = ({ location }: any) => {
     };
 
     useEffect(() => {
-        let searchTerm = location.search.slice(1);
-        let queryParamsObject = querystring.parse(searchTerm);
+        const searchTerm = location.search.slice(1);
+        const queryParamsObject = querystring.parse(searchTerm);
         setEvents([...getAllEventData(queryParamsObject)]);
         setLoading(false);
     }, [location, getAllEventData]); 

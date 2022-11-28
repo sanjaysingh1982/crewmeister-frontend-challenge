@@ -53,8 +53,7 @@ export const getAllAbsences = (filters: any) => {
         const absenceType = event.type.toLowerCase();
         return {
             ...event,
-            confirmedAt: moment(event.confirmedAt).format('YYYY-MM-DD'),
-            createdAt: moment(event.createdAt).format('YYYY-MM-DD'),
+            status: event.confirmedAt ? 'Confirmed' : (event.rejectedAt ? 'Rejected' : 'Requested'),
             title: getUserNameWithType(userName, absenceType)
         }
     });

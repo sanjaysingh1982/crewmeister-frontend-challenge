@@ -13,9 +13,9 @@ function App() {
     <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
             <DataProvider> 
-                  <Routes>
-                    <Route path='/' element={<HomeRoute location={{search: '/'}} />} />
-                  </Routes>
+              <Routes>
+                <Route path='/' element={<HomeRoute location={{search: '/'}} />} />
+              </Routes>
             </DataProvider>
         </Suspense>
     </BrowserRouter>

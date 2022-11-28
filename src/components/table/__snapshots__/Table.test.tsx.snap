@@ -119,37 +119,37 @@ exports[`Table component should match with snapshot 1`] = `
                 className="sorting"
                 onClick={[Function]}
               >
-                type
+                Type
               </th>
               <th
                 className="sorting"
                 onClick={[Function]}
               >
-                start date
+                Start Date
               </th>
               <th
                 className="sorting"
                 onClick={[Function]}
               >
-                end date
+                End Date
               </th>
               <th
                 className="sorting"
                 onClick={[Function]}
               >
-                created at
+                Member Note
               </th>
               <th
                 className="sorting"
                 onClick={[Function]}
               >
-                confirmed at
+                Status
               </th>
               <th
                 className="sorting"
                 onClick={[Function]}
               >
-                note
+                Admitter Note
               </th>
             </tr>
           </thead>
@@ -167,12 +167,8 @@ exports[`Table component should match with snapshot 1`] = `
               <td>
                 2017-01-13
               </td>
-              <td>
-                2016-12-12T14:17:01.000+01:00
-              </td>
-              <td>
-                2016-12-12T18:03:55.000+01:00
-              </td>
+              <td />
+              <td />
               <td />
             </tr>
             <tr>
@@ -187,43 +183,12 @@ exports[`Table component should match with snapshot 1`] = `
                 2017-01-05
               </td>
               <td>
-                2017-01-03T17:36:52.000+01:00
-              </td>
-              <td>
-                2017-01-03T17:39:50.000+01:00
-              </td>
-              <td>
                 ganzer tag
               </td>
+              <td />
+              <td />
             </tr>
           </tbody>
-          <thead
-            data-test="table-foot"
-          >
-            <tr>
-              <th>
-                Title
-              </th>
-              <th>
-                type
-              </th>
-              <th>
-                start date
-              </th>
-              <th>
-                end date
-              </th>
-              <th>
-                created at
-              </th>
-              <th>
-                confirmed at
-              </th>
-              <th>
-                note
-              </th>
-            </tr>
-          </thead>
         </table>
       </div>
     </div>
